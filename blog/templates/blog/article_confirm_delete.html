@@ -1,0 +1,6 @@
+<p>Voulez-vous vraiment supprimer cet article ?</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Oui, supprimer</button>
+</form>
+<a href="{% url 'article_list' %}">Annuler</a>
